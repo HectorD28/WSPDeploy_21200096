@@ -11,7 +11,7 @@
 	<groupId>251dswS2SpringSigconBackend</groupId>
 	<artifactId>251dswS2SpringSigconBackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>251dswS2SpringSigconBackend</name>
+	<name>WSPDeploy_21200096</name>
 	<description>Proyecto Spring Boot del curso DSM</description>
 	<url/>
 	<licenses>
@@ -27,7 +27,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>18</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -60,9 +60,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
-
-	<build>
+	</dependencies>	
+        <build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -90,5 +89,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
