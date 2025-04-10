@@ -98,6 +98,8 @@ public class PersonaController {
         PersonaResponse personaResponse;
         try{
             personaResponse=personaService.findPersona(personaRequest.getIdPersona());
+            if (personaResponse==null)
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ErrorResponse.builder().message("Persona not found for delete").build());
             
         }catch(Exception e){
             logger.error("Error inesperado",e);
